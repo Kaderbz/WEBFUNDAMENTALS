@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    background-color: #CCCCCC;
+    width: 1080px;
+    margin: auto;
+}
+
+#searchbar {
+    width: 200px;
+}
+
+.nav {
+    width: 1080px;
+    margin: 0 auto;
+    color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-title {
+    margin-left: 20px;
+}
+
+.buttonblue {
+    height: 35px;
+    width: 100px;
+    background-color: #2B78E4;
+    color: black;
+    border-color: black;
+    border-width: 3px;
+    font-size: 16px;
+    box-shadow: 5px 5px #000000;
+    margin-right: 20px;
+}
+
+.buttonyellow {
+    height: 35px;
+    width: 100px;
+    background-color: #FFD966;
+    color: black;
+    border-color: black;
+    border-width: 3px;
+    font-size: 16px;
+    box-shadow: 5px 5px #000000;
+}
+
+.buttongreen {
+    height: 35px;
+    width: 200px;
+    background-color: #93C47D;
+    color: black;
+    border-color: black;
+    border-width: 3px;
+    font-size: 16px;
+    box-shadow: 5px 5px #000000;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+}
+
+.right,
+.left {
+    margin-top: 20px;
+    padding: 10px;
+    flex: 1;
+}
+
+.left {
+    flex: 2;
+}
+
+
+
+.user-card,
+.card {
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #17a2b8;
+    height: 125px;
+    margin-bottom: 70px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h1,
+.card-body h2,
+.card-body h3,
+.card-body p {
+    margin: 20px 0px;
+}
+
+
+
+a {
+    color: #17a2b8;
+}
+
+.card {
+
+height: 200px;
+padding: 20px;
+}
