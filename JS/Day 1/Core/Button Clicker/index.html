@@ -1,74 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Profile page</title>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Profile page</title>
+    </head>
 <body>
-    <!--navigation bar-->
-
     <div class="container">
-        <div class="top">
-            <div class="nav">
-                <h1 class="nav-title">Dojonary</h1>
-                <ul class="nav-links">
-                    <li></li><input id="searchbar"  type="text" placeholder="Search.."></li>
-                    <li><button class="buttonblue">Login</button></li>
-                </ul>
-            </div>
-        </div>
+        <div class="top"> <!--navigation bar-->
+            <h1 class="title">Dojonary</h1>
+            <input type="text" name="search" placeholder="Search" class="search">
+            <button class="btn login" onclick="login(this)">Login</button>
+        </div> <!--navigation bar end-->
         <div class="row">
-            <!-- left column -->
-            <div class="left">
-                <div class="user-card">
-                    <div class="card-body">
+            <div class="flex-left"> <!-- left column -->
+                <div class="box definition">
+                    <div class="left">
                         <h1>ninja</h1>
-                        <h2>noun</h2>
-                        <h3>Plural: ninjas</h3>
-                        <button class="buttonyellow">13 Likes</button>
-                        <p>
-                            A practitioner skilled in the
-                            <br>
-                            <a href="#">Japanese</a> art of <a href="#">ninjutsu</a>
-                        </p>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="btn like" onclick="message()">13 likes</button>
                     </div>
+                    <p class="text">A practitioner skilled in the
+                        <br>
+                        <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
                 </div>
-
-                <div class="user-card">
-
-                    <div class="card-body">
+                <div class="box definition">
+                    <div class="left">
                         <h1>ninja</h1>
-                        <h2>noun</h2>
-                        <h3>Plural: ninjas</h3>
-                        <button class="buttonyellow">37 Likes</button>
-                        <p>
-                            A <a href="#">programmer</a> who breaks
-                            <br>
-                            down problems with<a href="#">&nbsp;zen</a>-like
-                            <br>
-                            focus
-                        </p>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="btn like" onclick="message()">37 likes</button>
                     </div>
+                    <p class="text">A <a href="#">programmer</a> who breaks
+                        <br>
+                        down problems with <a href="#">zen</a>-like 
+                        <br>
+                        focus</p>
                 </div>
-            </div>
-
-            <!-- right column -->
-            <div class="right">
-                <div class="card">
-                    Dojonary is
-                    <br>
-                    defined by YOU
-                    <button class="buttongreen">Add Definition</button>
+            </div><!-- left column end -->
+            <div class="flex-right"> <!-- right column -->
+                <div class="box">
+                    <h2>Dojonary is defined by YOU</h2>
+                    <button class="btn add" onclick="hide_btn(this)">Add Definition</button>
                 </div>
-            </div>
-
+            </div> <!-- right column end -->
         </div>
     </div>
-    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
