@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to an external CSS stylesheet -->
+    <title>Liking Likes</title> <!-- Title of the web page displayed in the browser tab -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>Network</h1> <!-- Heading for the top section of the page -->
+        </div>
+        <h1 class="title">Your Feed</h1> <!-- Heading for the main content section of the page -->
+        <div class="row">
+            <div class="left">
+                <div class="user">
+                    <img src="user-circle.png" alt="user picture" class="avatar-m"> <!-- User avatar image -->
+                    <p><a href="#">Add an avatar</a></p> <!-- Link to add a user avatar -->
+                    <h2>James Doe</h2> <!-- User's name -->
+                </div>
+            </div>
+            <div class="right">
+                <!-- Post 1 -->
+                <div class="post">
+                    <div class="top-line">
+                        <h2>Neil M</h2> <!-- Post author's name -->
+                        <div class="likes">
+                            <span id="post-1">9 like(s)</span> <!-- Display the number of likes for this post -->
+                            <button class="like-btn" onclick="like(0)">Like</button> <!-- Like button for post 1 -->
+                        </div>
+                    </div>
+                    <p>I just set up this new discord bot, let me
+                        <br>
+                        know what you all think. <a href="#">link</a></p>
+                    <!-- Post content and a link -->
+                </div>
+                <!-- Post 2 -->
+                <div class="post">
+                    <div class="top-line">
+                        <h2>Nichole K</h2> <!-- Post author's name -->
+                        <div class="likes">
+                            <span id="post-2">12 like(s)</span> <!-- Display the number of likes for this post -->
+                            <button class="like-btn" onclick="like(1)">Like</button> <!-- Like button for post 2 -->
+                        </div>
+                    </div>
+                    <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+                    <!-- Post content and a link -->
+                </div>
+                <!-- Post 3 -->
+                <div class="post">
+                    <div class="top-line">
+                        <h2>Jim R</h2> <!-- Post author's name -->
+                        <div class="likes">
+                            <span id="post-3">9 like(s)</span> <!-- Display the number of likes for this post -->
+                            <button class="like-btn" onclick="like(2)">Like</button> <!-- Like button for post 3 -->
+                        </div>
+                    </div>
+                    <p>I can't stop listening to the <a href="#">new album</a>.
+                        <br>
+                        Who else is liking it?</p>
+                    <!-- Post content and a link -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link to an external JavaScript file -->
+</body>
+
+</html>
